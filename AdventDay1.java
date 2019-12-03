@@ -19,7 +19,9 @@ public class AdventDay1 {
     }
 
     public static void readFile(List list) throws IOException {
-        String file = "input.txt";
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter the file to read : ");
+        String file = in.nextLine();
         String line;
         try {
             BufferedReader reader = new BufferedReader(new FileReader(file));
